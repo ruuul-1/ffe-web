@@ -1,0 +1,152 @@
+/* Logo navbar */
+.logo-light, .logo-dark {
+    height:65px;
+    width:auto;
+}
+
+/* HERO a pantalla completa */
+.hero-full{
+    height: 100vh;
+}
+
+/* Pantalla completa */
+.hero-full .swiper-container,
+.hero-full .swiper,
+.hero-full .swiper-wrapper,
+.hero-full .swiper-slide{
+    height: 100%;
+}
+.hero-full .swiper-container.swiper-hero{
+    height: 100% !important;
+}
+.hero-full .swiper-slide{
+    min-height: 100% !important;
+}
+
+/* Color puntos imágenes "Quiénes somos" */
+.bg-dot.primary{
+    background-image: radial-gradient(#d5e1d5 2px, transparent 2.5px) !important;
+}
+/* Color puntos ticks */
+.icon-list.bullet-soft-primary.bullet-bg i {
+    background-color: #198754;
+}
+/* Color ticks */
+.icon-list.bullet-soft-primary i {
+    color: #fefefe;
+}
+
+/* Logos cards */
+.card-logo-ife{
+    height: 100px !important;
+    width: auto !important;
+    margin-bottom: 0.5rem !important;
+}
+.card-logo {
+    height: 75px !important;
+    width: auto !important;
+    margin-bottom: 0.5rem !important;
+}
+/* Texto cards */
+.card-ife .card-body,
+.card-cof .card-body,
+.card-rf .card-body,
+.card-vida .card-body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;      /* Disposición: [logo - contenido - link abajo] */
+    row-gap: 1.2rem;                        /* Espacio entre los elementos: [logo - texto - link] */
+    font-weight: lighter;
+}
+/* Link cards */
+.card-ife-link,
+.card-cof-link,
+.card-rf-link,
+.card-vida-link {
+    justify-self: start;
+}
+.card-ife-link {
+    color: #3f78e0 !important;
+}
+.card-cof-link {
+    color: #ea4343 !important;
+}
+.card-rf-link {
+    color: #bd3fe0 !important;
+}
+.card-vida-link {
+    color: #f98d79 !important;
+}
+.border-soft-ife {
+    border-color: #c1d5ff !important;
+}
+.border-soft-cof {
+    border-color: #ff9797 !important;
+}
+.border-soft-rf {
+    border-color: #ebc5ff !important;
+}
+.border-soft-vida {
+    border-color: #ffddd6 !important;
+}
+
+/* Tamaño cards noticias */
+.card-custom {
+    min-height: 670px !important;
+}
+/* Tamaño imágen noticias y eventos */
+.swiper-slide figure {
+    height: 250px;
+    overflow: hidden;
+}
+/* Alineación fecha eventos */
+.event-card .post-header {
+    min-height: 90px;
+}
+/* Link noticias */
+.card-news-link {
+    color: #d5e1d5 !important;
+}
+.card-news-link:hover {
+    color: #198754 !important;
+}
+/* Botones carrusel */
+.swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-color: #198754;
+}
+.swiper-controls .swiper-pagination .swiper-pagination-bullet {
+    background-color: #198754;
+}
+
+
+
+
+/* Background personalizado */
+.bg-custom {
+    background-color: #d5e1d5 !important;
+}
+
+/* Botón personalizado */
+.btn-custom {
+    --bs-btn-bg: #d5e1d5;
+    --bs-btn-border-color: #d5e1d5;
+    --bs-btn-color: #ffffff;
+
+    /* Hover */
+    --bs-btn-hover-bg: #198754;
+    --bs-btn-hover-border-color: #198754;
+    --bs-btn-hover-color: #ffffff;
+
+    /* Active */
+    --bs-btn-active-bg: #198754;
+    --bs-btn-active-border-color: #198754;
+    --bs-btn-active-color: #ffffff;
+}
+
+/* Scroll */
+.progress-wrap svg.progress-circle path {
+    stroke: #198754; !important;
+}
+.progress-wrap::after {
+    color: #198754; !important;
+}
+
