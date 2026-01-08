@@ -4,6 +4,64 @@
     width:auto;
 }
 
+/* Topbar */
+.ffe-topbar {
+    padding: .45rem 0;
+}
+.ffe-toplink:hover {
+    color:rgba(255,255,255,0.7) !important;
+}
+.navbar.navbar-clone.navbar-stick .ffe-topbar,
+.navbar.navbar-clone.navbar-stick .ffe-topbar a,
+.navbar.navbar-clone.navbar-stick .ffe-topbar span {
+    color: #000 !important;
+}
+.navbar.navbar-clone.navbar-stick .ffe-topbar a:hover {
+    color: #198754 !important;
+}
+
+.navbar.navbar-clone.navbar-stick .nav-link:hover {
+    color: #198754 !important;
+}
+.navbar.navbar-clone.navbar-stick .dropdown-menu .dropdown-item:hover {
+    background-color: #d5e1d5;
+    color: #198754;
+}
+/* Hover de los links del dropdown */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    color: #198754;
+    background-color: rgba(10, 122, 59, 0.08);
+}
+
+#offcanvas-info {
+    background-color: #fff;
+}
+#offcanvas-info,
+#offcanvas-info p,
+#offcanvas-info a,
+#offcanvas-info address {
+    color: #60697b;
+}
+#offcanvas-info .widget-title {
+    color: #000;
+}
+#offcanvas-info a {
+    text-decoration: underline;
+}
+#offcanvas-info .social a {
+    text-decoration: none;
+}
+#offcanvas-info a:hover {
+    color: #198754;
+}
+
+/* Hacer más grande el offcanvas de info */
+#offcanvas-info {
+    width: 450px;
+    max-width: 90vw;
+}
+
 /* HERO a pantalla completa */
 .hero-full{
     height: 100vh;
@@ -38,12 +96,12 @@
 
 /* Logos cards */
 .card-logo-ife{
-    height: 100px !important;
+    height: 140px !important;
     width: auto !important;
     margin-bottom: 0.5rem !important;
 }
 .card-logo {
-    height: 75px !important;
+    height: 140px !important;
     width: auto !important;
     margin-bottom: 0.5rem !important;
 }
@@ -77,48 +135,151 @@
     color: #f98d79 !important;
 }
 .border-soft-ife {
-    border-color: #c1d5ff !important;
+    border: solid 0.1px #ededed;
+    border-bottom: #c1d5ff !important;
 }
 .border-soft-cof {
-    border-color: #ff9797 !important;
+    border: solid 0.1px #ededed;
+    border-bottom: #ff9797 !important;
 }
 .border-soft-rf {
-    border-color: #ebc5ff !important;
+    border: solid 0.1px #ededed;
+    border-bottom: #ebc5ff !important;
 }
 .border-soft-vida {
-    border-color: #ffddd6 !important;
+    border: solid 0.1px #ededed;
+    border-bottom: #ffddd6 !important;
 }
 
 /* Tamaño cards noticias */
-.card-custom {
-    min-height: 670px !important;
+.card-custom{
+    min-height: 550px !important;
+    width: 400px !important;
+    font-size: 12px;
 }
-/* Tamaño imágen noticias y eventos */
-.swiper-slide figure {
+.card-custom h2 {
+    font-size: 15px !important;
+}
+
+/* Tamaño imágen noticias */
+.card-custom figure {
     height: 250px;
     overflow: hidden;
 }
-/* Alineación fecha eventos */
-.event-card .post-header {
-    min-height: 90px;
+
+.card-custom-events {
+    min-height: 380px !important;
+    max-height: 380px !important;
+    width: 400px !important;
 }
+
+
+.card-custom-events figure {
+    height: 300px;
+    margin: 0;
+}
+
+/* Permite que se vean los lados */
+.swiper-container,
+.swiper {
+    overflow: visible;
+}
+
 /* Link noticias */
 .card-news-link {
-    color: #d5e1d5 !important;
+    color: #aab0bc !important;
 }
-.card-news-link:hover {
-    color: #198754 !important;
+
+/* Alineación logos footer */
+.ali-icon {
+    display: flex;
+    gap: 1px;
 }
-/* Botones carrusel */
-.swiper-controls .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    border-color: #198754;
+.ali-icon p {
+    margin: 0;
 }
-.swiper-controls .swiper-pagination .swiper-pagination-bullet {
+
+/* Logos RRSS */
+.rrss {
+    margin-left: -3px;
+}
+
+/* Subrayado de palabras */
+.underline-custom {
+    text-decoration-line: underline;
+    text-decoration-color: #198754;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.btn-newsletter {
     background-color: #198754;
+    color: #fff;
+    transform: none !important;
+}
+.btn-newsletter:hover {
+    background-color: #198754;
+    color: #fff;
+}
+
+
+/* Links SOLO dentro del offcanvas abierto */
+.navbar-collapse.offcanvas.offcanvas-nav.offcanvas-start.show .nav-link {
+    color: #000 !important;
+}
+/* Dropdown items SOLO dentro del offcanvas abierto */
+.navbar-collapse.offcanvas.offcanvas-nav .dropdown-item {
+    color: #60697b;
+}
+@media (max-width: 1400px) {
+    /* offcanvas  móvil */
+    .navbar-collapse.offcanvas.offcanvas-nav.offcanvas-start .dropdown-menu {
+        background: transparent !important;
+        border: 0 !important;
+        box-shadow: none !important;
+    }
+    .offcanvas.offcanvas-start {
+        width: 20rem !important;
+    }
+    .offcanvas {
+        background-color: #fff;
+    }
+    /* Teléfono */
+    .navbar .offcanvas-nav.offcanvas-start .offcanvas-footer {
+        color: #60697b;
+    }
+    /* Email */
+    .navbar .offcanvas-nav.offcanvas-start .offcanvas-footer a[href^="mailto"] {
+        color: #60697b;
+        text-decoration: underline;
+    }
+    /* Hover del email */
+    .navbar .offcanvas-nav.offcanvas-start .offcanvas-footer a[href^="mailto"]:hover {
+        color: #198754;
+    }
+    .navbar .offcanvas-nav.offcanvas-start .dropdown-menu .dropdown-item:hover {
+        color: #198754;
+    }
+    .navbar
+    .offcanvas-nav.offcanvas-start
+    .nav-link.dropdown-toggle:hover {
+        color: #198754 !important;
+    }
+    .navbar
+    .offcanvas-nav.offcanvas-start
+    .nav-link:not(.dropdown-toggle):hover {
+        color: #198754 !important;
+    }
+
 }
 
 
 
+
+/* Texto justificado */
+.text-align-justify {
+    text-align: justify;
+}
 
 /* Background personalizado */
 .bg-custom {
@@ -127,8 +288,8 @@
 
 /* Botón personalizado */
 .btn-custom {
-    --bs-btn-bg: #d5e1d5;
-    --bs-btn-border-color: #d5e1d5;
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #198754;
     --bs-btn-color: #ffffff;
 
     /* Hover */
@@ -136,11 +297,21 @@
     --bs-btn-hover-border-color: #198754;
     --bs-btn-hover-color: #ffffff;
 
-    /* Active */
-    --bs-btn-active-bg: #198754;
-    --bs-btn-active-border-color: #198754;
-    --bs-btn-active-color: #ffffff;
 }
+
+
+/* Color de selección de texto */
+::selection {
+    background-color: #d5e1d5;
+    color: #fff;
+}
+
+/* Firefox necesita este selector aparte */
+::-moz-selection {
+    background-color: #d5e1d5;
+    color: #fff;
+}
+
 
 /* Scroll */
 .progress-wrap svg.progress-circle path {
@@ -149,4 +320,3 @@
 .progress-wrap::after {
     color: #198754; !important;
 }
-

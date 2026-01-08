@@ -388,7 +388,7 @@ var theme = {
           }
         }
       }
-      var sliderSpeed = slider1.getAttribute('data-speed') ? slider1.getAttribute('data-speed') : 500;
+      var sliderSpeed = slider1.getAttribute('data-speed') ? slider1.getAttribute('data-speed') : 1200;
       var sliderAutoPlay = slider1.getAttribute('data-autoplay') !== 'false';
       var sliderAutoPlayTime = slider1.getAttribute('data-autoplaytime') ? slider1.getAttribute('data-autoplaytime') : 5000;
       var sliderAutoHeight = slider1.getAttribute('data-autoheight') === 'true';
