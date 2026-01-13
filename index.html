@@ -10,1519 +10,1112 @@
           content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, SaaS, sass, seo, startup, html5 template, site template">
     <meta name="author" content="elemis">
     <title>Fundación Familia y Educación. Órgano diocesano que promueve el matrimonio y la vida familiar</title>
-    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png">
+    <link rel="shortcut icon" href="./assets/img/favicon/favicon-32x32.png">
     <link rel="stylesheet" href="./assets/css/plugins.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/colors/violet.css">
-    <link rel="stylesheet" href="./assets/css/new_style.css">
+    <link rel="stylesheet" href="./assets/css/new-style.css">
     <link rel="preload" href="./assets/css/fonts/urbanist.css" as="style" onload="this.rel='stylesheet'">
 </head>
-
 <body>
 <div class="content-wrapper">
-    <!-- header + navbar -->
     <header class="wrapper bg-soft-primary">
-        <nav class="navbar navbar-expand-lg center-logo position-absolute navbar-dark">
+        <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none ffe-topbar">
+            <div class="container flex-lg-row flex-nowrap align-items-center">
+                <div class="navbar-brand w-100 d-flex justify-content-start">
+                    <a href="./index.html">
+                        <img class="logo-dark" src="./assets/img/logos/logo-ffe-verde.png" srcset="" alt="" />
+                        <img class="logo-light" src="./assets/img/svg/logo-ffe-blanco(2).svg" srcset="" alt="" />
+                    </a>
+                </div>
 
-            <div class="container justify-content-between align-items-center">
-                <div class="d-flex flex-row w-100 justify-content-between align-items-center d-lg-none">
-                    <div class="navbar-brand">
-                        <a href="./index.html">
-                            <img class="logo-dark" src="./assets/img/logo-dark.png"
-                                 srcset="./assets/img/logo-dark@2x.png 2x" alt=""/>
-                            <img class="logo-light" src="./assets/img/logo-ffe-w.svg"
-                                 srcset="./assets/img/logo-light@2x.png 2x" alt=""/>
-                        </a>
+                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start flex-grow-1">
+                    <div class="offcanvas-header d-lg-none">
+                        <img class="logo-light mt-5 mb-2" src="./assets/img/logos/logo-ffe-verde.png" srcset="" alt="" />
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                     </div>
-                    <div class="navbar-other ms-auto">
-                        <ul class="navbar-nav flex-row align-items-center">
-                            <li class="nav-item d-lg-none">
-                                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+
+                    <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Noticias</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Eventos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Colabora</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <!-- /.d-flex -->
+                        <!-- /.navbar-nav -->
 
-                <div class="navbar-collapse-wrapper d-flex flex-row align-items-center w-100">
-                    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-                        <div class="offcanvas-header mx-lg-auto order-0 order-lg-1 d-lg-flex px-lg-15">
-                            <a href="./index.html" class="transition-none d-none d-lg-flex">
-                                <img class="logo-dark" src="./assets/img/logo-dark.png"
-                                     srcset="" alt=""/>
-                                <img class="logo-light" src="./assets/img/logo-ffe-w.svg"
-                                     srcset="" alt="Fundación Familia y Educación"/>
-                            </a>
-                            <h3 class="text-white fs-30 mb-0 d-lg-none">Sandbox</h3>
-                            <button type="button" class="btn-close btn-close-white d-lg-none"
-                                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-
-                        <!-- Menú izquierdo -->
-                        <div class="w-100 order-1 order-lg-0 d-lg-flex offcanvas-body">
-                            <ul class="navbar-nav ms-lg-auto">
-                                <li class="nav-item dropdown dropdown-mega">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
-                                        La Fundación
-                                    </a>
-                                    <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                                        <li class="mega-menu-content mega-menu-scroll">
-                                            <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo1.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi1.jpg"
-                                                                srcset="./assets/img/demos/mi1@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 1</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo2.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi2.jpg"
-                                                                srcset="./assets/img/demos/mi2@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 2</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo3.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi3.jpg"
-                                                                srcset="./assets/img/demos/mi3@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 3</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo4.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi4.jpg"
-                                                                srcset="./assets/img/demos/mi4@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 4</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo5.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi5.jpg"
-                                                                srcset="./assets/img/demos/mi5@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 5</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo6.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi6.jpg"
-                                                                srcset="./assets/img/demos/mi6@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 6</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo7.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi7.jpg"
-                                                                srcset="./assets/img/demos/mi7@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 7</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo8.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi8.jpg"
-                                                                srcset="./assets/img/demos/mi8@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 8</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo9.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi9.jpg"
-                                                                srcset="./assets/img/demos/mi9@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 9</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo10.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi10.jpg"
-                                                                srcset="./assets/img/demos/mi10@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 10</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo11.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi11.jpg"
-                                                                srcset="./assets/img/demos/mi11@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 11</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo12.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi12.jpg"
-                                                                srcset="./assets/img/demos/mi12@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 12</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo13.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi13.jpg"
-                                                                srcset="./assets/img/demos/mi13@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 13</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo14.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi14.jpg"
-                                                                srcset="./assets/img/demos/mi14@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 14</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo15.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi15.jpg"
-                                                                srcset="./assets/img/demos/mi15@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 15</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo16.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi16.jpg"
-                                                                srcset="./assets/img/demos/mi16@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 16</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo17.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi17.jpg"
-                                                                srcset="./assets/img/demos/mi17@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 17</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo18.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi18.jpg"
-                                                                srcset="./assets/img/demos/mi18@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 18</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo19.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi19.jpg"
-                                                                srcset="./assets/img/demos/mi19@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 19</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo20.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi20.jpg"
-                                                                srcset="./assets/img/demos/mi20@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 20</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo21.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi21.jpg"
-                                                                srcset="./assets/img/demos/mi21@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 21</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo22.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi22.jpg"
-                                                                srcset="./assets/img/demos/mi22@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 22</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo23.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi23.jpg"
-                                                                srcset="./assets/img/demos/mi23@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 23</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo24.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi24.jpg"
-                                                                srcset="./assets/img/demos/mi24@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 24</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo25.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi25.jpg"
-                                                                srcset="./assets/img/demos/mi25@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 25</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo26.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi26.jpg"
-                                                                srcset="./assets/img/demos/mi26@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 26</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo27.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi27.jpg"
-                                                                srcset="./assets/img/demos/mi27@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 27</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo28.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi28.jpg"
-                                                                srcset="./assets/img/demos/mi28@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 28</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo29.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi29.jpg"
-                                                                srcset="./assets/img/demos/mi29@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 29</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo30.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi30.jpg"
-                                                                srcset="./assets/img/demos/mi30@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 30</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo31.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi31.jpg"
-                                                                srcset="./assets/img/demos/mi31@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 31</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo32.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi32.jpg"
-                                                                srcset="./assets/img/demos/mi32@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 32</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo33.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi33.jpg"
-                                                                srcset="./assets/img/demos/mi33@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 33</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo34.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi34.jpg"
-                                                                srcset="./assets/img/demos/mi34@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 34</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo35.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi35.jpg"
-                                                                srcset="./assets/img/demos/mi35@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 35</span>
-                                                    </a>
-                                                </li>
-                                                <li class="col">
-                                                    <a class="dropdown-item" href="./demo36.html">
-                                                        <figure class="rounded lift d-none d-lg-block"><img
-                                                                src="./assets/img/demos/mi36.jpg"
-                                                                srcset="./assets/img/demos/mi36@2x.jpg 2x" alt="">
-                                                        </figure>
-                                                        <span class="d-lg-none">Demo 36</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <!--/.row -->
-                                            <span class="d-none d-lg-flex">
-                                                <i class="uil uil-direction"></i><strong>Scroll to view more</strong>
-                                            </span>
-                                        </li>
-                                        <!--/.mega-menu-content-->
-                                    </ul>
-                                    <!--/.dropdown-menu -->
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Noticias</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">Services</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./services.html">Services
-                                                    I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./services2.html">Services
-                                                    II</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">About</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./about.html">About
-                                                    I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./about2.html">About
-                                                    II</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">Shop</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./shop.html">Shop
-                                                    I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./shop2.html">Shop
-                                                    II</a></li>
-                                                <li class="nav-item"><a class="dropdown-item"
-                                                                        href="./shop-product.html">Product Page</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./shop-cart.html">Shopping
-                                                    Cart</a></li>
-                                                <li class="nav-item"><a class="dropdown-item"
-                                                                        href="./shop-checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">Contact</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./contact.html">Contact
-                                                    I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./contact2.html">Contact
-                                                    II</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./contact3.html">Contact
-                                                    III</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">Career</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./career.html">Job
-                                                    Listing I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./career2.html">Job
-                                                    Listing II</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./career-job.html">Job
-                                                    Description</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">Utility</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./404.html">404 Not
-                                                    Found</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./page-loader.html">Page
-                                                    Loader</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./signin.html">Sign
-                                                    In I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./signin2.html">Sign
-                                                    In II</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./signup.html">Sign
-                                                    Up I</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./signup2.html">Sign
-                                                    Up II</a></li>
-                                                <li class="nav-item"><a class="dropdown-item"
-                                                                        href="./terms.html">Terms</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item"><a class="dropdown-item" href="./pricing.html">Pricing</a>
-                                        </li>
-                                        <li class="nav-item"><a class="dropdown-item" href="./onepage.html">One Page</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Eventos</a>
-                                    <div class="dropdown-menu dropdown-lg">
-                                        <div class="dropdown-lg-content">
-                                            <div>
-                                                <h6 class="dropdown-header">Project Pages</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a class="dropdown-item" href="./projects.html">Projects I</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="./projects2.html">Projects II</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="./projects3.html">Projects
-                                                        III</a></li>
-                                                    <li><a class="dropdown-item" href="./projects4.html">Projects IV</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!-- /.column -->
-                                            <div>
-                                                <h6 class="dropdown-header">Single Projects</h6>
-                                                <ul class="list-unstyled">
-                                                    <li><a class="dropdown-item" href="./single-project.html">Single
-                                                        Project I</a></li>
-                                                    <li><a class="dropdown-item" href="./single-project2.html">Single
-                                                        Project II</a></li>
-                                                    <li><a class="dropdown-item" href="./single-project3.html">Single
-                                                        Project III</a></li>
-                                                    <li><a class="dropdown-item" href="./single-project4.html">Single
-                                                        Project IV</a></li>
-                                                </ul>
-                                            </div>
-                                            <!-- /.column -->
-                                        </div>
-                                        <!-- /auto-column -->
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- /.navbar-nav -->
-                        </div>
-
-                        <!-- Menú derecho -->
-                        <div class="w-100 order-3 order-lg-2 d-lg-flex offcanvas-body">
-                            <ul class="navbar-nav me-lg-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contacto</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a class="dropdown-item" href="./blog.html">Blog without
-                                            Sidebar</a></li>
-                                        <li class="nav-item"><a class="dropdown-item" href="./blog2.html">Blog with
-                                            Sidebar</a></li>
-                                        <li class="nav-item"><a class="dropdown-item" href="./blog3.html">Blog with Left
-                                            Sidebar</a></li>
-                                        <li class="dropdown dropdown-submenu dropend"><a
-                                                class="dropdown-item dropdown-toggle" href="#"
-                                                data-bs-toggle="dropdown">Blog Posts</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a class="dropdown-item" href="./blog-post.html">Post
-                                                    without Sidebar</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./blog-post2.html">Post
-                                                    with Sidebar</a></li>
-                                                <li class="nav-item"><a class="dropdown-item" href="./blog-post3.html">Post
-                                                    with Left Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown dropdown-mega">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Colabora</a>
-                                    <ul class="dropdown-menu mega-menu mega-menu-dark mega-menu-img">
-                                        <li class="mega-menu-content">
-                                            <ul class="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-6 gy-lg-4 list-unstyled">
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/about.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block1.svg"
-                                                            alt=""></div>
-                                                    <span>About</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item" href="./docs/blocks/blog.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block2.svg"
-                                                            alt=""></div>
-                                                    <span>Blog</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/call-to-action.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block3.svg"
-                                                            alt=""></div>
-                                                    <span>Call to Action</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/clients.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block4.svg"
-                                                            alt=""></div>
-                                                    <span>Clients</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/contact.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block5.svg"
-                                                            alt=""></div>
-                                                    <span>Contact</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/facts.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block6.svg"
-                                                            alt=""></div>
-                                                    <span>Facts</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item" href="./docs/blocks/faq.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block7.svg"
-                                                            alt=""></div>
-                                                    <span>FAQ</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/features.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block8.svg"
-                                                            alt=""></div>
-                                                    <span>Features</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/footer.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block9.svg"
-                                                            alt=""></div>
-                                                    <span>Footer</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item" href="./docs/blocks/hero.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block10.svg"
-                                                            alt=""></div>
-                                                    <span>Hero</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item" href="./docs/blocks/misc.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block17.svg"
-                                                            alt=""></div>
-                                                    <span>Misc</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/navbar.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block11.svg"
-                                                            alt=""></div>
-                                                    <span>Navbar</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/portfolio.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block12.svg"
-                                                            alt=""></div>
-                                                    <span>Portfolio</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/pricing.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block13.svg"
-                                                            alt=""></div>
-                                                    <span>Pricing</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/process.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block14.svg"
-                                                            alt=""></div>
-                                                    <span>Process</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item" href="./docs/blocks/team.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block15.svg"
-                                                            alt=""></div>
-                                                    <span>Team</span>
-                                                </a>
-                                                </li>
-                                                <li class="col"><a class="dropdown-item"
-                                                                   href="./docs/blocks/testimonials.html">
-                                                    <div class="rounded img-svg d-none d-lg-block p-4 mb-lg-2"><img
-                                                            class="rounded-0" src="./assets/img/demos/block16.svg"
-                                                            alt=""></div>
-                                                    <span>Testimonials</span>
-                                                </a>
-                                                </li>
-                                            </ul>
-                                            <!--/.row -->
-                                        </li>
-                                        <!--/.mega-menu-content-->
-                                    </ul>
-                                    <!--/.dropdown-menu -->
-                                </li>
-                                <li class="nav-item dropdown dropdown-mega">
-                                    <a class="nav-link dropdown-toggle" href="#"
-                                       data-bs-toggle="dropdown">?</a>
-                                    <ul class="dropdown-menu mega-menu">
-                                        <li class="mega-menu-content">
-                                            <div class="row gx-0 gx-lg-3">
-                                                <div class="col-lg-4">
-                                                    <h6 class="dropdown-header">Usage</h6>
-                                                    <ul class="list-unstyled cc-2 pb-lg-1">
-                                                        <li><a class="dropdown-item" href="./docs/index.html">Get
-                                                            Started</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/forms.html">Forms</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="./docs/faq.html">FAQ</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/changelog.html">Changelog</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/credits.html">Credits</a></li>
-                                                    </ul>
-                                                    <h6 class="dropdown-header mt-lg-6">Styleguide</h6>
-                                                    <ul class="list-unstyled cc-2">
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/styleguide/colors.html">Colors</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/styleguide/fonts.html">Fonts</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/styleguide/icons-svg.html">SVG Icons</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/styleguide/icons-font.html">Font Icons</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/styleguide/illustrations.html">Illustrations</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/styleguide/backgrounds.html">Backgrounds</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="./docs/styleguide/misc.html">Misc</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <!--/column -->
-                                                <div class="col-lg-8">
-                                                    <h6 class="dropdown-header">Elements</h6>
-                                                    <ul class="list-unstyled cc-3">
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/accordion.html">Accordion</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/alerts.html">Alerts</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/animations.html">Animations</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/avatars.html">Avatars</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/background.html">Background</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/badges.html">Badges</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/buttons.html">Buttons</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/card.html">Card</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/carousel.html">Carousel</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/dividers.html">Dividers</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/form-elements.html">Form
-                                                            Elements</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/image-hover.html">Image Hover</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/image-mask.html">Image Mask</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/lightbox.html">Lightbox</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/player.html">Media
-                                                            Player</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/modal.html">Modal</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/pagination.html">Pagination</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/progressbar.html">Progressbar</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/shadows.html">Shadows</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/shapes.html">Shapes</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/tables.html">Tables</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/tabs.html">Tabs</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/text-animations.html">Text
-                                                            Animations</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/text-highlight.html">Text
-                                                            Highlight</a></li>
-                                                        <li><a class="dropdown-item" href="./docs/elements/tiles.html">Tiles</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/tooltips-popovers.html">Tooltips &
-                                                            Popovers</a></li>
-                                                        <li><a class="dropdown-item"
-                                                               href="./docs/elements/typography.html">Typography</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <!--/column -->
-                                            </div>
-                                            <!--/.row -->
-                                        </li>
-                                        <!--/.mega-menu-content-->
-                                    </ul>
-                                    <!--/.dropdown-menu -->
-                                </li>
-                            </ul>
-                            <!-- /.navbar-nav -->
-                        </div>
-                        <div class="offcanvas-body d-lg-none order-4 mt-auto">
-                            <div class="offcanvas-footer">
-                                <div>
-                                    <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
-                                    <br/> 00 (123) 456 78 90 <br/>
-                                    <nav class="nav social social-white mt-4">
-                                        <a href="#"><i class="uil uil-twitter"></i></a>
-                                        <a href="#"><i class="uil uil-facebook-f"></i></a>
-                                        <a href="#"><i class="uil uil-dribbble"></i></a>
-                                        <a href="#"><i class="uil uil-instagram"></i></a>
-                                        <a href="#"><i class="uil uil-youtube"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
+                        <div class="offcanvas-footer d-lg-none">
+                            <div>
+                                <br /> 663 88 68 71 <br />
+                                <a href="mailto:fundacion@familiayeducacion.es">fundacion@familiayeducacion.es</a>
+                                <nav class="nav social mt-4">
+                                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                    <a href="#"><i class="uil uil-instagram"></i></a>
+                                    <a href="#"><i class="uil uil-youtube"></i></a>
+                                </nav>
+                                <!-- /.social -->
                             </div>
                         </div>
+                        <!-- /.offcanvas-footer -->
                     </div>
-                    <!-- /.navbar-collapse -->
+                    <!-- /.offcanvas-body -->
                 </div>
-                <!-- /.navbar-collapse-wrapper -->
+                <!-- /.navbar-collapse -->
+
+                <div class="navbar-other w-100 d-flex ms-auto">
+                    <ul class="navbar-nav flex-row align-items-center ms-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info">
+                                <i class="uil uil-info-circle"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search">
+                                <i class="uil uil-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                        </li>
+                    </ul>
+                    <!-- /.navbar-nav -->
+                </div>
+                <!-- /.navbar-other -->
             </div>
             <!-- /.container -->
         </nav>
         <!-- /.navbar -->
-    </header>
-    <!-- /header -->
-    <section class="wrapper image-wrapper bg-image" data-image-src="./assets/img/hero.jpg">
-        <div class="container pt-17 pb-19 pt-md-18 pb-md-17 text-center">
-            <div class="row">
-                <div class="col-lg-8 col-xl-7 col-xxl-6 header-text" data-cues="slideInDown" data-group="page-title">
-                    <h1 class="display-1 text-black fs-60 mb-4 px-md-15 px-lg-0">
 
-                        Bienvenidos a la Fundación Familia y Educación
-
-                    </h1>
-                    <p class="lead fs-24 text-black lh-sm mb-7 ">
-                        La Fundación Familia y Educación es un órgano diocesano que surge para promover la vivencia del
-                        matrimonio y la vida familiar en la acogida, la comprensión, el encuentro, la perseverancia, el
-                        perdón, el compromiso, descubriendo la verdad del amor.
-                    </p>
-                    <div>
-                        <a class="btn btn-green rounded mb-10 mb-xxl-5">
-                            Saber más sobre la fundación
-                        </a>
-                    </div>
-                </div>
+        <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+            <div class="offcanvas-header">
+                <img class="logo-light mt-5 mb-2" src="./assets/img/logos/logo-ffe-verde.png" srcset="" alt="" />
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
             </div>
+            <div class="offcanvas-body pb-6">
+                <div class="widget mb-8">
+                    <p class="text-align-justify">Órgano diocesano que surge para promover la vivencia del matrimonio y la vida familiar en la
+                        acogida, la comprensión, el encuentro, la perseverancia, el perdón, el compromiso, descubriendo
+                        la verdad del amor.</p>
+                </div>
+                <!-- /.widget -->
+                <div class="widget mb-8">
+                    <h4 class="widget-title mb-3">Contacto</h4>
+                    <address> C/Marco Oliver, 5 <br /> 03009 Alicante</address>
+                    <p> 663 88 68 71 </p>
+                    <a href="mailto:fundacion@familiayeducacion.es">fundacion@familiayeducacion.es</a><br />
+                </div>
+                <!-- /.widget -->
+                <div class="widget mb-8">
+                    <h4 class="widget-title mb-3">Saber más</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Colabora</a></li>
+                        <li><a href="#">Aviso Legal</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Ley de Cookies</a></li>
+                    </ul>
+                </div>
+                <!-- /.widget -->
+                <div class="widget">
+                    <h4 class="widget-title mb-3">Síguenos</h4>
+                    <nav class="nav social">
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href="#"><i class="uil uil-instagram"></i></a>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </nav>
+                    <!-- /.social -->
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /.offcanvas-body -->
         </div>
+        <!-- /.offcanvas -->
+
+        <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+            <div class="container d-flex flex-row py-6">
+                <form class="search-form w-100">
+                    <input id="search-form" type="text" class="form-control" placeholder="¿Qué estás buscando?">
+                </form>
+                <!-- /.search-form -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- /.container -->
+        </div>
+    </header>
+    <section class="wrapper">
+        <div class="swiper-container swiper-hero dots-over" data-margin="0" data-autoplay="true"
+             data-autoplaytime="7000" data-nav="true" data-dots="true" data-items="1">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
+                         data-image-src="./assets/img/photos/hero-1.jpg">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                                    <div class="hero-content">
+                                        <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
+                                            Fundación Familia y Educación</h2>
+                                        <p class="lead fs-20 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-3s">
+                                            Trabajamos junto a la familia, ofreciéndole formación y atención a lo largo de
+                                            todos sus ciclos vitales, promovemos una sociedad mejor, orientada al bien
+                                            común. </p>
+                                        <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#"
+                                                                                                               class="btn btn-lg btn-outline-white rounded-pill">Saber
+                                            más</a></div>
+                                    </div>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/.container -->
+                    </div>
+                    <!--/.swiper-slide -->
+                    <div class="swiper-slide bg-overlay bg-overlay-400 bg-dark bg-image"
+                         data-image-src="./assets/img/photos/hero-2.jpg">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-md-10 offset-md-1 col-lg-7 offset-lg-0 col-xl-6 col-xxl-5 text-center text-lg-start justify-content-center align-self-center align-items-start">
+                                    <div class="hero-content">
+                                        <h2 class="display-1 fs-56 mb-4 text-white animate__animated animate__slideInDown animate__delay-1s">
+                                            Fundación Familia y Educación</h2>
+                                        <p class="lead fs-20 lh-sm mb-7 text-white animate__animated animate__slideInRight animate__delay-3s">
+                                            Trabajamos junto a la familia, ofreciéndole formación y atención a lo largo de
+                                            todos sus ciclos vitales, promovemos una sociedad mejor, orientada al bien
+                                            común. </p>
+                                        <div class="animate__animated animate__slideInUp animate__delay-3s"><a href="#"
+                                                                                                               class="btn btn-lg btn-outline-white rounded-pill">Saber
+                                            más</a></div>
+                                    </div>
+                                </div>
+                                <!--/column -->
+                            </div>
+                            <!--/.row -->
+                        </div>
+                        <!--/.container -->
+                    </div>
+                    <!--/.swiper-slide -->
+                </div>
+                <!--/.swiper-wrapper -->
+            </div>
+            <!-- /.swiper -->
+        </div>
+        <!-- /.swiper-container -->
         <div class="overflow-hidden">
-            <div class="divider text-light mx-n2">
+            <div class="divider text-light mx-n1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60">
                     <path fill="currentColor" d="M0,0V60H1440V0A5771,5771,0,0,1,0,0Z"/>
                 </svg>
             </div>
         </div>
     </section>
-    <!-- /section -->
-
-    <!-- sección 4 cards -->
-    <section class="wrapper bg-light ">
-        <div class="container pb-15 pb-md-17">
-            <div class="row gx-md-5 gy-5 mt-n17 mb-14 mb-md-17">
-                <div class="col-md-6 col-xl-3">
-                    <div class="card shadow-lg card-ife-azul h-100">
+    <section class="wrapper bg-light">
+        <div class="container-fluid px-xxl-5 pb-15 pb-md-10">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-5 g-4 mt-n15 mt-md-n20 mb-14 mb-md-10 hero-cards">
+                <div class="col">
+                    <div class="card shadow-lg card-border-bottom border-soft-ife card-ife h-100">
                         <div class="card-body">
-                            <img src="./assets/img/logo-ife-white-1024x644.png"
-                                 class="svg-inject icon-svg icon-svg-sm solid-mono text-fuchsia mb-3 card-logo" alt=""/>
-                            <p class="mb-2">
-                                Formación a las familias sobre temas relacionados con la pareja, el matrimonio y los
-                                hijos.
-                            </p>
-                            <a href="#" class="more hover link-fuchsia card-ife-azul-link">Saber más</a>
+                            <img src="./assets/img/logos/logo-ife-azul.png" class="card-logo-ife" alt=""/>
+                            <p class="mt-5">Formación a las familias sobre temas relacionados con la pareja, el
+                                matrimonio y los hijos. </p>
+                            <a href="#" class="more hover card-ife-link">Saber más</a>
                         </div>
+                        <!--/.card-body -->
                     </div>
+                    <!--/.card -->
                 </div>
                 <!--/column -->
-
-                <div class="col-md-6 col-xl-3">
-                    <div class="card shadow-lg card-cof-roja h-100">
+                <div class="col">
+                    <div class="card shadow-lg card-border-bottom border-soft-cof card-cof h-100">
                         <div class="card-body">
-                            <img src="./assets/img/logo-cof-white-1024x602.png"
-                                 class="svg-inject icon-svg icon-svg-sm solid-mono text-violet mb-3 card-logo" alt=""/>
-                            <p class="mb-2">
-                                La familia, como célula básica de la sociedad, ha de ser cuidada y protegida…
-                            </p>
-                            <a href="#" class="more hover link-violet card-cof-roja-link">Saber más</a>
+                            <img src="./assets/img/logos/logo-cof-rojo.png" class="card-logo" alt=""/>
+                            <p class="mt-5">La familia, como célula básica de la sociedad, ha de ser cuidada y
+                                protegida…</p>
+                            <a href="#" class="more hover card-cof-link">Saber más</a>
                         </div>
+                        <!--/.card-body -->
                     </div>
+                    <!--/.card -->
                 </div>
                 <!--/column -->
-
-                <div class="col-md-6 col-xl-3">
-                    <div class="card shadow-lg card-rf-morada h-100">
+                <div class="col">
+                    <div class="card shadow-lg card-border-bottom border-soft-rf card-rf h-100">
                         <div class="card-body">
-                            <img src="./assets/img/logo-rf-white-1024x640.png"
-                                 class="svg-inject icon-svg icon-svg-sm solid-mono text-orange mb-3 card-logo" alt=""/>
-                            <p class="mb-2">
-                                Vía de comunicación e información con todas las personas asociadas.
-                            </p>
-                            <a href="#" class="more hover link-orange card-rf-morada-link">Saber más</a>
+                            <img src="./assets/img/logos/logo-rf-rosa.png" class="card-logo" alt=""/>
+                            <p class="mt-5">Vía de comunicación e información con todas las personas asociadas. </p>
+                            <a href="#" class="more hover card-rf-link">Saber más</a>
                         </div>
+                        <!--/.card-body -->
                     </div>
+                    <!--/.card -->
                 </div>
                 <!--/column -->
-
-                <div class="col-md-6 col-xl-3">
-                    <div class="card shadow-lg card-vida-rosa h-100">
+                <div class="col">
+                    <div class="card shadow-lg card-border-bottom border-soft-vida card-vida h-100">
                         <div class="card-body">
-                            <img src="./assets/img/logo-vida-1.png"
-                                 class="svg-inject icon-svg icon-svg-sm solid-mono text-green mb-3 card-logo" alt=""/>
-                            <p class="mb-2">
-                                Nos importa la vida.
-                                Apoyamos la vida
-                                desde la concepción
-                                hasta la muerte natural.
-                            </p>
-                            <a href="#" class="more hover link-green card-vida-rosa-link">Saber más</a>
+                            <img src="./assets/img/logos/logo-vida-coral.png" class="card-logo" alt=""/>
+                            <p class="mt-5">Nos importa la vida. Apoyamos la vida desde la concepción hasta la muerte
+                                natural. </p>
+                            <a href="#" class="more hover card-vida-link">Saber más</a>
                         </div>
+                        <!--/.card-body -->
                     </div>
+                    <!--/.card -->
+                </div>
+                <!--/column -->
+                <div class="col">
+                    <div class="card shadow-lg card-border-bottom border-soft-alianza card-alianza h-100">
+                        <div class="card-body">
+                            <img src="./assets/img/logos/logo-aef-azul.png" class="card-logo-ife" alt=""/>
+                            <p class="mt-5">
+                                Un compromiso para impulsar la conciliación entre la vida familiar y laboral.
+                            </p>
+                            <a href="#" class="more hover card-ife-link">Saber más</a>
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
                 </div>
                 <!--/column -->
             </div>
             <!--/.row -->
-            <div class="row gy-10 gy-sm-13 gx-md-8 gx-xl-12 align-items-center mt-17">
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+        <div class="container py-14 py-md-10 ">
+            <div class="row">
+                <div class="col-lg-9 col-xl-8 col-xxl-12">
+                    <h3 class="display-3 ls-sm mb-5">Noticias</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Fundación Familia y Educación</h2>
+                        <a href="#" class="more hover card-news-link mb-3">Ver todas</a>
+                    </div>
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <div class="position-relative">
+                <div class="shape bg-dot primary rellax w-17 h-20" data-rellax-speed="1"
+                     style="top: 0; left: -1.7rem;"></div>
+                <div class="swiper-container dots-closer blog grid-view mb-6" data-margin="0" data-dots="true"
+                     data-items-xl="3" data-items-md="2" data-items-xs="1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/firma-convenio-aef.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">Firma
+                                                        del convenio entre la Fundación Familia y Educación y la
+                                                        Fundación Giménez Ganga</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>En el marco de la Alianza Familia-Empresa, la Fundación Familia y
+                                                        Educación ha formalizado un nuevo acuerdo de colaboración
+                                                        con...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/responsabilidad-digital.jpg"
+                                                    alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">“Unidos
+                                                        por la Responsabilidad Digital: familia, escuela, parroquia y
+                                                        especialistas”</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>¿Qué hacen nuestras pantallas con nosotros… y qué podemos hacer
+                                                        nosotros con ellas? Con esa pregunta arranca la Jornada de
+                                                        Responsabilidad...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Sep 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/diputacion-alicante.jpeg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">Diputación
+                                                        de Alicante nos concede una subvención</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>La Excelentísima Diputación de Alicante concede a la Fundación
+                                                        familia y educación la cantidad de 1390,58 dentro de la
+                                                        convocatoria...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Sep 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/echad-las-redes.png" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">Encuentro
+                                                        diocesano Echad las redes</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>Con el inicio del segundo bienio del Proyecto Diocesano de
+                                                        Evangelización (PDE), la Diócesis de Orihuela-Alicante convoca
+                                                        el Encuentro de...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Sep 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/echad-las-redes.png" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">Encuentro
+                                                        diocesano Echad las redes</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>Con el inicio del segundo bienio del Proyecto Diocesano de
+                                                        Evangelización (PDE), la Diócesis de Orihuela-Alicante convoca
+                                                        el Encuentro de...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Sep 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/echad-las-redes.png" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">Encuentro
+                                                        diocesano Echad las redes</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>Con el inicio del segundo bienio del Proyecto Diocesano de
+                                                        Evangelización (PDE), la Diócesis de Orihuela-Alicante convoca
+                                                        el Encuentro de...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Sep 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/echad-las-redes.png" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-body">
+                                                <div class="post-header">
+                                                    <h2 class="post-title h3 mt-1 mb-3"><a class="link-dark"
+                                                                                           href="">Encuentro
+                                                        diocesano Echad las redes</a></h2>
+                                                </div>
+                                                <!-- /.post-header -->
+                                                <div class="post-content">
+                                                    <p>Con el inicio del segundo bienio del Proyecto Diocesano de
+                                                        Evangelización (PDE), la Diócesis de Orihuela-Alicante convoca
+                                                        el Encuentro de...</p>
+                                                </div>
+                                                <!-- /.post-content -->
+                                            </div>
+                                            <!--/.card-body -->
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Sep 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Noticias</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                        </div>
+                        <!--/.swiper-wrapper -->
+                    </div>
+                    <!--/.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+            </div>
+            <!-- /.position-relative -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section class="wrapper bg-light">
+        <div class="container py-14 py-md-12">
+            <div class="row">
+                <div class="col-lg-9 col-xl-8 col-xxl-12">
+                    <h3 class="display-3 ls-sm mb-5">Eventos</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Fundación Familia y Educación</h2>
+                        <a href="#" class="more hover card-news-link mb-3">Ver todas</a>
+                    </div>
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <div class="position-relative">
+                <div class="shape bg-dot primary rellax w-17 h-20" data-rellax-speed="1"
+                     style="top: 0; left: -1.7rem;"></div>
+                <div class="swiper-container dots-closer blog grid-view mb-6" data-margin="0" data-dots="true"
+                     data-items-xl="3" data-items-md="2" data-items-xs="1">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom-events">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/orientar.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Próximamente</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom-events">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/retiro-familias.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom-events">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/feria-diocesana.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom-events">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/agentes-pastoral.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card card-custom-events">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/firma-convenio-aef.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/firma-convenio-aef.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="item-inner">
+                                    <article>
+                                        <div class="card">
+                                            <figure class="card-img-top overlay overlay-1 hover-scale"><a href="#"> <img
+                                                    src="./assets/img/photos/firma-convenio-aef.jpg" alt=""/></a>
+                                                <figcaption>
+                                                    <h5 class="from-top mb-0">Leer más</h5>
+                                                </figcaption>
+                                            </figure>
+                                            <div class="card-footer">
+                                                <ul class="post-meta d-flex mb-0">
+                                                    <li class="post-date"><i class="uil uil-calendar-alt"></i><span>30 Nov 2025</span>
+                                                    </li>
+                                                    <li class="post-comments"><a href="#"><i
+                                                            class="uil uil-file-alt fs-15"></i>Eventos</a></li>
+                                                </ul>
+                                                <!-- /.post-meta -->
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                        <!-- /.card -->
+                                    </article>
+                                    <!-- /article -->
+                                </div>
+                                <!-- /.item-inner -->
+                            </div>
+                            <!--/.swiper-slide -->
+                        </div>
+                        <!--/.swiper-wrapper -->
+                    </div>
+                    <!--/.swiper -->
+                </div>
+                <!-- /.swiper-container -->
+            </div>
+            <!-- /.position-relative -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="sobre-nosotros" class="wrapper bg-light">
+        <div class="container py-14 py-md-10">
+            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
+                <div class="col-lg-6 position-relative order-lg-2">
+                    <div class="shape bg-dot primary rellax w-25 h-23" data-rellax-speed="1"
+                         style="top: 1rem; left: 5.5rem"></div>
+                    <div class="overlap-grid overlap-grid-2">
+                        <div class="item">
+                            <figure class="rounded"><img src="./assets/img/photos/apoyo.jpg" srcset="" alt=""
+                                                         style="max-height: 330px; width: 280px"></figure>
+                        </div>
+                        <div class="item">
+                            <figure class="rounded shadow"><img src="./assets/img/photos/orientar.jpg" srcset="" alt=""
+                                                                style="max-height: 360px; width: 280px"></figure>
+                        </div>
+                    </div>
+                </div>
+                <!--/column -->
                 <div class="col-lg-6">
-                    <div class="row gx-md-5 gy-5">
-                        <div class="col-12">
-                            <figure class="rounded mx-md-5"><img src="./assets/img/hero2-1.jpg" srcset="" alt=""
-                                                                 style="max-height: 285px; width: 560px"></figure>
+                    <h2 class="display-4 mb-3">Sobre Nosotros</h2>
+                    <p class="mb-6 text-align-justify">La Fundación Familia y Educación es un órgano diocesano que surge para promover la
+                        vivencia del matrimonio y la vida familiar en la acogida, la comprensión, el encuentro, la
+                        perseverancia, el perdón, el compromiso, descubriendo la verdad del amor.</p>
+                    <div class="row gy-3 gx-xl-8">
+                        <div class="col-xl-6">
+                            <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                                <li><span><i class="uil uil-check"></i></span><span>Acompañamiento integral a las familias</span>
+                                </li>
+                                <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Formación para el matrimonio y la vida familiar</span>
+                                </li>
+                            </ul>
                         </div>
                         <!--/column -->
-                        <div class="col-md-6">
-                            <figure class="rounded"><img src="./assets/img/atender.jpg" srcset="" alt=""
-                                                         style="max-height: 259.55px; width: 292.5px"></figure>
+                        <div class="col-xl-6">
+                            <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                                <li><span><i class="uil uil-check"></i></span><span>Escucha, orientación y apoyo en momentos clave</span>
+                                </li>
+                                <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Promoción del perdón, el compromiso y el encuentro</span>
+                                </li>
+                            </ul>
                         </div>
                         <!--/column -->
-                        <div class="col-md-6">
-                            <figure class="rounded"><img src="./assets/img/apoyo.jpg" srcset="" alt=""
-                                                         style="max-height: 259.55px; width: 292.5px"></figure>
+                        <div style="text-align: center">
+                            <a href="#" class="btn btn-custom rounded-pill mt-5">Saber más sobre la Fundación</a>
                         </div>
-                        <!--/column -->
                     </div>
                     <!--/.row -->
                 </div>
                 <!--/column -->
-                <div class="col-lg-6">
-                    <h2 class="fs-16 text-uppercase text-muted mb-3">Fundación Familia y Educación</h2>
-                    <h3 class="display-3 mb-8"><span class="underline-3 style-2 green">Objetivos</span></h3>
-                    <p class="mb-5">
-                        La finalidad principal es ofrecer apoyo, reconocimiento y ayuda a las familias, acompañándolas
-                        en cada una de las etapas de su vida.
-                    </p>
-                    <p class="mb-5">
-                        Este acompañamiento se inspira en la antropología cristiana, que valora la dignidad de cada
-                        persona y el papel fundamental de la familia en la sociedad.
-                    </p>
-                    <p class="mb-5">
-                        Asimismo, se realiza bajo la guía de la Doctrina Social de la Iglesia, que orienta la acción
-                        hacia la promoción del bien común, la solidaridad y el fortalecimiento de los lazos familiares.
-                    </p>
-                    <p class="mb-5">
-                        En conjunto, se busca estar cerca de las familias para sostenerlas, orientarlas y ayudarlas a
-                        vivir plenamente su vocación.
-                    </p>
-                    <div>
-                        <a class="btn btn-green rounded mb-10 mb-xxl-5 btn-obj">
-                            Saber más
-                        </a>
-                    </div>
-                </div>
-                <!--/column -->
             </div>
             <!--/.row -->
         </div>
-        <!-- /.container -->
     </section>
-    <!-- /section -->
-    <section class="wrapper bg-gray position-relative min-vh-60 d-lg-flex align-items-center">
-        <div class="col-lg-6 position-lg-absolute top-0 end-0 image-wrapper bg-image bg-cover h-100 afe-imagen"
-             data-image-src="./assets/img/afe-home-966x1024.jpg">
-            <div class="divider text-gray divider-v-start d-none d-lg-block">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 1200">
-                    <g/>
-                    <g>
-                        <g>
-                            <polygon fill="currentColor" points="6 0 0 0 0 1200 6 1200 54 0 6 0"/>
-                        </g>
-                    </g>
-                </svg>
-            </div>
-        </div>
-        <!--/column -->
-        <div class="container">
-            <div class="row gx-0">
-                <div class="col-lg-6">
-                    <div class="pt-13 pb-15 pb-md-17 py-lg-16 pe-lg-15">
-                        <h2 class="fs-16 text-uppercase text-muted mb-3">Fundación Familia y Educación</h2>
-                        <h3 class="display-3 ls-sm mb-5">Alianza Familia Empresa</h3>
-                        <p class="mb-5">La Alianza Familia Empresa es un compromiso entre las Empresas y la Fundación
-                            Familia y Educación que busca el bienestar tanto laboral como familiar.
-                        <p class="mb-5">Reconoce que cuando las personas se sienten apoyadas en casa y en el trabajo,
-                            son más felices y productivas.
-                        <p>
-                        <p class="mb-5">La Alianza está dirigida a empresas que no solo respaldan la maternidad y la
-                            crianza, sino que también facilitan la conciliación entre la vida familiar y laboral. </p>
-                        <div>
-                            <a class="btn btn-green rounded mb-10 mb-xxl-5 btn-obj">
-                                Saber más
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--/column -->
-            </div>
-            <!--/.row -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper bg-light ">
-        <div class="container py-14 py-md-16">
-            <div class="row">
-                <div class="col-lg-9 col-xl-8 col-xxl-7">
-                    <h2 class="fs-16 text-uppercase text-muted mb-3">Fundación Familia y Educación</h2>
-                    <h3 class="display-3 ls-sm mb-5">Eventos</h3>
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="swiper-container blog grid-view mb-10" data-margin="30" data-dots="true" data-items-xl="3"
-                 data-items-md="2" data-items-xs="1">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="event-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/orientar.jpg" alt=""></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Próximamente</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Próximamente</a>
-                                    </h2>
-                                </div>
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>Próximamente</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Eventos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <article class="event-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/retiro_familias.jpg" alt=""> </a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Retiro
-                                        para familias «Contigo es distinto» </a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>17 Feb 2024</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Eventos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <article class="event-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/feria_diocesana.jpg" alt=""></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Feria
-                                        Diocesana «LUX MUNDI»</a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>17 Ene 2024</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Eventos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <article class="event-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/agentes_pastoral.jpg" alt="" style="min-height: 400px"></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">V
-                                        Encuentro de Formación de Pastoral Familiar</a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>18 Nov 2023</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Eventos</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                    </div>
-                    <!-- /.swiper-wrapper -->
-                </div>
-                <!-- /.swiper -->
-            </div>
-            <!-- /.swiper-container -->
-            <div>
-                <a class="btn btn-green rounded mb-10 mb-xxl-5 btn-obj">
-                    Ver todos
-                </a>
-            </div>
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper bg-light ">
-        <div class="container py-14 py-md-10">
-            <div class="row">
-                <div class="col-lg-9 col-xl-8 col-xxl-7">
-                    <h2 class="fs-16 text-uppercase text-muted mb-3">Fundación Familia y Educación</h2>
-                    <h3 class="display-3 ls-sm mb-5">Noticias</h3>
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="swiper-container blog grid-view mb-10" data-margin="30" data-dots="true" data-items-xl="3"
-                 data-items-md="2" data-items-xs="1">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <article class="new-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/IMG-20251127-WA0015-scaled.jpg" style="min-height: 400px"
-                                        alt=""></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Firma
-                                        del convenio entre la Fundación Familia y Educación y la Fundación Giménez
-                                        Ganga</a></h2>
-                                </div>
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>30 Nov 2025</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Noticias</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <article class="new-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/urn_aaid_sc_EU_57970781-97e0-48fb-916e-2c49b7fe9a22.jpg"
-                                        alt=""></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">“Unidos
-                                        por la Responsabilidad Digital: familia, escuela, parroquia y especialistas”</a>
-                                    </h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>30 Sep 2025</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Noticias</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <article class="new-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/images.jpeg" alt=""> </a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Diputación
-                                        de Alicante nos concede una subvención</a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>5 Sep 2025</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Noticias</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <article class="new-card">
-                                <figure class="overlay overlay-1 hover-scale rounded mb-6"><a href="#"> <img
-                                        src="./assets/img/echad-redes.png" alt="" style="min-height: 400px"></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Leer más</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="post-header">
-                                    <h2 class="post-title h3 mb-3"><a class="link-dark" href="./blog-post.html">Encuentro
-                                        diocesano Echad las redes</a></h2>
-                                </div>
-                                <!-- /.post-header -->
-                                <div class="post-footer">
-                                    <ul class="post-meta">
-                                        <li class="post-date"><i
-                                                class="uil uil-calendar-alt"></i><span>5 Sep 2025</span></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-file-alt fs-14"></i>Noticias</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.post-footer -->
-                            </article>
-                            <!-- /article -->
-                        </div>
-                        <!--/.swiper-slide -->
-                    </div>
-                    <!-- /.swiper-wrapper -->
-                </div>
-                <!-- /.swiper -->
-            </div>
-            <!-- /.swiper-container -->
-            <div>
-                <a class="btn btn-green rounded mb-10 mb-xxl-5 btn-obj">
-                    Ver todas
-                </a>
-            </div>
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /section -->
-    <section class="wrapper image-wrapper bg-image bg-overlay" data-image-src="./assets/img/familia-manos.jpg">
+    <section class="wrapper image-wrapper bg-image bg-overlay bg-overlay-400"
+             data-image-src="./assets/img/photos/familia-manos.jpg">
         <div class="container py-18">
             <div class="row text-center">
                 <div class="col-lg-11 col-xl-10 col-xxl-8 mx-auto">
-                    <h2 class="display-4 mb-5 text-white px-lg-5 px-xxl-0">Colabora con la Fundación</h2>
+                    <h3 class="display-1 mb-5 text-white px-lg-5 px-xxl-0">Colabora con la Fundación</h3>
                     <p class="fs-16 text-white mb-10">Hoy más que nunca necesitamos también de tu apoyo.</p>
-                    <div>
-                        <a class="btn btn-green rounded mb-5 mb-xxl-5 btn-obj">
-                            Quiero colaborar
-                        </a>
-                    </div>
-                    <div class="row mt-13">
-                        <div class="col-xl-15 col-xxl-15 mx-auto">
-                            <div class="row align-items-center counter-wrapper gy-6 text-center">
-                                <div class="col-md-4">
-                                    <h3 class="counter fs-50 text-white mb-1">12+</h3>
-                                    <p class="fs-18 mb-0 text-white">Años de actividad</p>
-                                </div>
-                                <!--/column -->
-                                <div class="col-md-4">
-                                    <h3 class="counter fs-50 text-white mb-1">13.000+</h3>
-                                    <p class="fs-18 mb-0 text-white">Personas formadas (IFE)</p>
-                                </div>
-                                <!--/column -->
-                                <div class="col-md-4">
-                                    <h3 class="counter fs-50 text-white mb-1">500+</h3>
-                                    <p class="fs-18 mb-0 text-white">Familias atendidas (COF)</p>
-                                </div>
-                                <!--/column -->
-                            </div>
-                            <!--/.row -->
-                        </div>
-                        <!-- /column -->
-                    </div>
-                    <!-- /.row -->
+                    <div class="animate__animated animate__slideInUp animate__delay-2s"><a href="#"
+                                                                                           class="btn btn-lg btn-outline-white rounded-pill">Quiero
+                        colaborar</a></div>
                 </div>
                 <!-- /column -->
+                <div class="row mt-13">
+                    <div class="col-xl-15 col-xxl-8 mx-auto">
+                        <div class="row align-items-center counter-wrapper gy-6 text-center">
+                            <div class="col-md-4">
+                                <h3 class="counter fs-50 text-white mb-1">12+</h3>
+                                <p class="fs-18 mb-0 text-white">Años de actividad</p>
+                            </div>
+                            <!--/column -->
+                            <div class="col-md-4">
+                                <h3 class="counter fs-50 text-white mb-1">13.000+</h3>
+                                <p class="fs-18 mb-0 text-white">Personas formadas (IFE)</p>
+                            </div>
+                            <!--/column -->
+                            <div class="col-md-4">
+                                <h3 class="counter fs-50 text-white mb-1">500+</h3>
+                                <p class="fs-18 mb-0 text-white">Familias atendidas (COF)</p>
+                            </div>
+                            <!--/column -->
+                        </div>
+                        <!--/.row -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!-- /.row -->
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
     <!-- /section -->
-    <footer class="bg-light mt-17">
-        <div class="container pb-13 pb-md-15">
-            <div class=" row gy-6 gy-lg-0">
-                <div class="col-md-4 col-lg-3">
-                    <div class="widget">
-                        <img class="mb-4" src="./assets/img/logo-fundacion-web.png" srcset="" alt=""
-                             style="max-height: 100px; width: auto"/>
-                        <div>
-                            <a class="btn btn-green rounded mb-5 mb-xxl-5 btn-obj">
-                                Quiero colaborar
-                            </a>
-                        </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/sobre(1).png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">fundacion@familiayeducacion.es</p>
-                        </div>
-                        <nav class="rrss">
-                            <div class="nav social">
-                                <a href="#"><i class="uil uil-facebook-f"></i></a>
-                                <a href="#"><i class="uil uil-youtube"></i></a>
-                            </div>
-                        </nav>
-                        <!-- /.social -->
+</div>
+<!-- /.content-wrapper -->
+<footer class="bg-light mt-17">
+    <div class="container pb-13 pb-md-15">
+        <div class=" row gy-6 gy-lg-0">
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <img class="mb-4" src="./assets/img/logos/logo-ffe-verde.png" srcset="" alt=""
+                         style="max-height: 100px; width: auto"/>
+                    <div>
+                        <a class="btn btn-custom rounded-pill mt-2">
+                            Quiero colaborar
+                        </a>
                     </div>
-                    <!-- /.widget -->
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/sobre.png" alt="">
+                        </div>
+                        <p class="mt-1 ms-1 fs-14">fundacion@familiayeducacion.es</p>
+                    </div>
+                    <nav class="rrss">
+                        <div class="nav social">
+                            <a href="#"><i class="uil uil-facebook-f"></i></a>
+                            <a href="#"><i class="uil uil-youtube"></i></a>
+                        </div>
+                    </nav>
+                    <!-- /.social -->
                 </div>
-                <div class="col-md-4 col-lg-3">
-                    <div class="widget">
-                        <h4 class="widget-title  mb-3"><span
-                                class="underline-custom"> Centro de Orientación Familiar </span></h4>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/llamar.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">673 53 00 22</p>
+                <!-- /.widget -->
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title  mb-3"><span
+                            class="underline-custom"> Centro de Orientación Familiar </span></h4>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/telefono.png" alt="">
                         </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/sobre(1).png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">cof@familiayeducacion.es</p>
+                        <p class="mt-1 ms-1 fs-14">673 53 00 22</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/sobre.png" alt="">
                         </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/ubicacion.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">COF Alicante: C/Marco Oliver, 5</p>
+                        <p class="mt-1 ms-1 fs-14">cof@familiayeducacion.es</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/ubicacion.png" alt="">
                         </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/ubicacion.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">COF Elche: C/Aurora, 6, C</p>
+                        <p class="mt-1 ms-1 fs-14">COF Alicante: C/Marco Oliver, 5</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/ubicacion.png" alt="">
                         </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/ubicacion.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">COF Benidorm: Avda, Dr. Orts Llorca, 3, 1</p>
+                        <p class="mt-1 ms-1 fs-14">COF Elche: C/Aurora, 6, C</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/ubicacion.png" alt="">
                         </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/ubicacion.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">COF Torrevieja: C/Blasco Ibáñez, 6, 1B</p>
+                        <p class="mt-1 ms-1 fs-14">COF Benidorm: Avda, Dr. Orts Llorca, 3, 1</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/ubicacion.png" alt="">
                         </div>
+                        <p class="mt-1 ms-1 fs-14">COF Torrevieja: C/Blasco Ibáñez, 6, 1B</p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.widget -->
+
+            <div class="col-md-4 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title  mb-3"><span
+                            class="underline-custom"> Instituto Familia y Educación </span></h4>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/telefono.png" alt="">
+                        </div>
+                        <p class="mt-1 ms-1 fs-14">663 88 68 71</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/sobre.png" alt="">
+                        </div>
+                        <p class="mt-1 ms-1 fs-14">ife@familiayeducacion.es</p>
+                    </div>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/ubicacion.png" alt="">
+                        </div>
+                        <p class="mt-1 ms-1 fs-14">C/Marco Oliver, 5, 03009 Alicante</p>
+                    </div>
+                    <h4 class="widget-title  mb-3 mt-11"><span
+                            class="underline-custom"> Red de Familias </span></h4>
+                    <div class="ali-icon mt-3">
+                        <div>
+                            <img src="./assets/img/icons/lineal/sobre.png" alt="">
+                        </div>
+                        <p class="mt-1 ms-1 fs-14">redfamilias@familiayeducacion.es</p>
                     </div>
                 </div>
                 <!-- /.widget -->
-
-                <div class="col-md-4 col-lg-3">
-                    <div class="widget">
-                        <h4 class="widget-title  mb-3"><span
-                                class="underline-custom"> Instituto Familia y Educación </span></h4>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/llamar.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">663 88 68 71</p>
-                        </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/sobre(1).png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">ife@familiayeducacion.es</p>
-                        </div>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/ubicacion.png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">C/Marco Oliver, 5, 03009 Alicante</p>
-                        </div>
-                        <h4 class="widget-title  mb-3 mt-11"><span
-                                class="underline-custom"> Red de Familias </span></h4>
-                        <div class="ali-icon mt-3">
-                            <div>
-                                <img src="./assets/img/sobre(1).png" alt="">
-                            </div>
-                            <p class="mt-1 ms-1 fs-14">redfamilias@familiayeducacion.es</p>
-                        </div>
-                    </div>
-                    <!-- /.widget -->
-                </div>
-                <!-- /column -->
-                <div class="col-md-12 col-lg-3">
-                    <div class="widget">
-                        <h4 class="widget-title  mb-3"><span class="underline-custom"> Newsletter </span></h4>
-                        <p class="mb-5 fs-14">Suscríbete para recibir información sobre la Fundación Famila y Educación.</p>
-                        <div class="newsletter-wrapper">
-                            <!-- Begin Mailchimp Signup Form -->
-                            <div id="mc_embed_signup2">
-                                <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
-                                      method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form"
-                                      class="validate " target="_blank" novalidate>
-                                    <div id="mc_embed_signup_scroll2">
-                                        <div class="mc-field-group input-group form-floating">
-                                            <input type="email" value="" name="EMAIL"
-                                                   class="required email form-control" placeholder="Correo electrónico"
-                                                   id="mce-EMAIL2">
-                                            <label for="mce-EMAIL2">Correo electrónico</label>
-                                            <input type="submit" value="Enviar" name="subscribe"
-                                                   id="mc-embedded-subscribe2" class="btn btn-green">
-                                        </div>
-                                        <div id="mce-responses2" class="clear">
-                                            <div class="response" id="mce-error-response2" style="display:none"></div>
-                                            <div class="response" id="mce-success-response2" style="display:none"></div>
-                                        </div>
-                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-                                                type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1"
-                                                value="" /> </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <!--End mc_embed_signup-->
-                        </div>
-                        <!-- /.newsletter-wrapper -->
-                    </div>
-                    <!-- /.widget -->
-                </div>
-                <!-- /column -->
-                <div class="col-12 text-center mt-16">
-                    <img src="./assets/img/diocesis-.png" style="height: 91px; width: 310px" alt="">
-                </div>
             </div>
-            <!--/.row -->
+            <!-- /column -->
+            <div class="col-md-12 col-lg-3">
+                <div class="widget">
+                    <h4 class="widget-title  mb-3"><span class="underline-custom"> Newsletter </span></h4>
+                    <p class="mb-5 fs-14">Suscríbete para recibir información sobre la Fundación Famila y Educación.</p>
+                    <div class="newsletter-wrapper">
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div id="mc_embed_signup2">
+                            <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
+                                  method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form"
+                                  class="validate " target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll2">
+                                    <div class="mc-field-group input-group form-floating">
+                                        <input type="email" value="" name="EMAIL"
+                                               class="required email form-control" placeholder="Correo electrónico"
+                                               id="mce-EMAIL2">
+                                        <label for="mce-EMAIL2">Correo electrónico</label>
+                                        <input type="submit" value="Enviar" name="subscribe"
+                                               id="mc-embedded-subscribe2" class="btn btn-newsletter">
+                                    </div>
+                                    <div id="mce-responses2" class="clear">
+                                        <div class="response" id="mce-error-response2" style="display:none"></div>
+                                        <div class="response" id="mce-success-response2" style="display:none"></div>
+                                    </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                            type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1"
+                                            value="" /> </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    </div>
+                    <!-- /.newsletter-wrapper -->
+                </div>
+                <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="col-12 text-center mt-16">
+                <img src="./assets/img/logos/logo-diocesis-orihuela.png" style="height: 91px; width: 310px" alt="">
+            </div>
         </div>
-    </footer>
-</div>
-<!-- /.content-wrapper -->
-
-<!-- Botón de scroll-->
+        <!--/.row -->
+    </div>
+</footer>
 <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
     </svg>
 </div>
-
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/theme.js"></script>
 </body>
