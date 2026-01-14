@@ -205,18 +205,19 @@
 }
 
 /* Cards eventos */
-/*
 .card-custom-events {
-    min-height: 380px !important;
-    max-height: 380px !important;
-    width: 400px !important;
+    width: 280px !important;
 }
 
-.card-custom-events figure {
-    height: 300px;
-    margin: 0;
+.card-custom-events a {
+    height: 100% !important;
 }
-*/
+
+.card-custom-events img {
+    object-fit: cover !important;
+    object-position: center !important;
+    height: 300px !important;
+}
 
 /* Link noticias */
 .card-news-link {
@@ -298,6 +299,26 @@
     margin-left: -3px;
 }
 
+/* Aviso legal */
+.footer-legal {
+    font-size: 13px;
+    letter-spacing: .02em;
+}
+
+.footer-legal-link {
+    color: #aab0bc;
+    text-decoration: none;
+}
+
+.footer-legal-link:hover {
+    text-decoration: underline;
+}
+
+.footer-legal-sep {
+    margin: 0 .5rem;
+    opacity: .7;
+}
+
 
 /* =========================================================
    UTILIDADES (texto, subrayados, colores)
@@ -375,3 +396,4 @@
 .progress-wrap::after {
     color: #198754 !important;
 }
+
