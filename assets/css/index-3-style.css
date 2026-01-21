@@ -1,0 +1,170 @@
+/* =========================================================
+   NAVBAR / TOPBAR
+   ========================================================= */
+
+/* Logo navbar */
+.logo-light,
+.logo-dark {
+    height: 65px;
+    width: auto;
+}
+
+.navbar-info {
+    background-color: #198754 !important;
+}
+
+
+/* =========================================================
+   HERO VIDEO
+   ========================================================= */
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-static .btn {
+    margin-top: 550px;
+    margin-right: 140px;
+}
+
+/* Botón oculto */
+.hero-cta-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* Botón visible */
+.hero-cta-shown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* =========================================================
+   FUNDACIÓN – GRID DE LOGOS
+   ========================================================= */
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    /* “Marco” del bloque para que no se vea plano */
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.10);
+    border-radius: 16px;
+    overflow: hidden;
+
+    /* Sombra suave */
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Card */
+.logo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px 22px;
+    min-height: 190px;
+    background: transparent;
+
+    /* Separación visible entre cards */
+    border-right: 1px solid rgba(15, 23, 42, 0.10);
+
+    text-decoration: none;
+    position: relative;
+
+    /* Interacción */
+    transition: transform .18s ease, background-color .18s ease;
+}
+
+/* Quita el borde derecho de la última */
+.logo-card:last-child {
+    border-right: 0;
+}
+
+/* Logo */
+.logo-card img {
+    max-width: 100%;
+    max-height: 95px;
+    object-fit: contain;
+
+    /* “Soso killer”: uniforma en reposo */
+    filter: grayscale(100%);
+    opacity: .78;
+
+    transition: filter .18s ease, opacity .18s ease, transform .18s ease;
+}
+
+/* Hover: vuelve a color + micro-elevación */
+.logo-card:hover {
+    background: rgba(25, 135, 84, 0.05); /* verde muy suave */
+    transform: translateY(-2px);
+}
+
+.logo-card:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* Micro-acento superior para dar “marca” */
+.logo-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: transparent;
+    transition: background-color .18s ease;
+}
+
+.logo-card:hover::before {
+    background: #198754;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1200px) {
+    .logo-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo-card {
+        border-right: 1px solid rgba(15, 23, 42, 0.10);
+        border-bottom: 1px solid rgba(15, 23, 42, 0.10);
+    }
+
+    /* limpia bordes del final de fila */
+    .logo-card:nth-child(3n) { border-right: 0; }
+    .logo-card:nth-last-child(-n+2) { border-bottom: 0; }
+}
+
+@media (max-width: 768px) {
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo-card:nth-child(2n) { border-right: 0; }
+}
+
+@media (max-width: 480px) {
+    .logo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-card {
+        border-right: 0;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.10);
+    }
+
+    .logo-card:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+

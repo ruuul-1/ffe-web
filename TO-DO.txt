@@ -1,10 +1,7 @@
 FFE:
-- Logo FFE sin las letras de [Fundación Familia y Educación] ✔️
-- Quitar menú "Instituto Familia y Educación | Centro de Orientación Familiar | Red de Familias | Vida | Alianza Familia Empresa ✔️
-- Cards como al principio que asomen un poco con el corte como [index.html] ✔️
-- Añadir otra card para [Alianza Familia Empresa] /* Intentar sacar el logo */ ✔️
-- Subir las secciones de noticias y eventos ✔️
-- Eventos como la página [https://www.diocesisoa.org/] ✔️
-- Posible sección de newsletter por separado y no en el footer ❓
-- Footer de momento como está ✔️
-- Cambiar sección [La Fundación] → [Sobre Nosotros] + Centrar botón y hacerlo más grande[Saber más] ✔️
+- Doble navbar como el de la diocesisoa.org
+- Degradado en el navbar para que se pueda ver
+- Quitar flecha a los slider y poner indicativo de que hay que bajar para ver más info
+- Vídeos IA para las diferentes instituciones que tienen
+- Hero que ocupe toda la pantalla
+- Cards abajo y cambiar diseño
