@@ -51,127 +51,151 @@
 }
 
 /* =========================================================
-   FUNDACIÓN – GRID DE LOGOS
+   CARDS SUBMENÚ
    ========================================================= */
+/* Fuente local: Barmeno */
+@font-face {
+    font-family: "Barmeno";
+    src: url("../fonts/barmeno/Barmeno Regular.ttf") format("truetype"),
+    url("../fonts/barmeno/barmeno-regular-588ce228b68dd.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
-.logo-grid {
+@font-face {
+    font-family: "Barmeno";
+    src: url("../fonts/barmeno/Barmeno Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Barmeno";
+    src: url("../fonts/barmeno/barmeno-bold-588ce24f8a369.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* GRID DE CARDS */
+.cards-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
-    /* “Marco” del bloque para que no se vea plano */
     background: #fff;
     border: 1px solid rgba(15, 23, 42, 0.10);
     border-radius: 16px;
-    overflow: hidden;
-
-    /* Sombra suave */
+    overflow: hidden; /* clave para recortar bien el radio */
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
-/* Card */
-.logo-card {
+/* Cada card */
+.cards-grid .card {
     display: flex;
+    flex-direction: column;       /* logo arriba, texto abajo */
     align-items: center;
     justify-content: center;
+    gap: 14px;
 
     padding: 28px 22px;
-    min-height: 190px;
-    background: transparent;
+    min-height: 230px;            /* un pelín más para texto */
+    background: #fff;
 
-    /* Separación visible entre cards */
+    /* separador entre cards (solo interno) */
+    border: 0;
+    border-radius: 0;
     border-right: 1px solid rgba(15, 23, 42, 0.10);
 
     text-decoration: none;
     position: relative;
 
-    /* Interacción */
-    transition: transform .18s ease, background-color .18s ease;
+    /* Hover limpio (sin mover) */
+    transition: background-color .18s ease, box-shadow .18s ease;
 }
 
-/* Quita el borde derecho de la última */
-.logo-card:last-child {
+/* Última sin separador */
+.cards-grid .card:last-child {
     border-right: 0;
 }
 
 /* Logo */
-.logo-card img {
+.cards-grid .card img {
     max-width: 100%;
     max-height: 95px;
     object-fit: contain;
-
-    /* “Soso killer”: uniforma en reposo */
-    filter: grayscale(100%);
-    opacity: .78;
-
-    transition: filter .18s ease, opacity .18s ease, transform .18s ease;
 }
 
-/* Hover: vuelve a color + micro-elevación */
-.logo-card:hover {
-    background: rgba(25, 135, 84, 0.05); /* verde muy suave */
-    transform: translateY(-2px);
+/* Texto centrado + Barmeno */
+.cards-grid .card-text {
+    text-align: center;
+    font-family: "Barmeno", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 
-.logo-card:hover img {
-    filter: grayscale(0%);
-    opacity: 1;
-    transform: scale(1.03);
+.cards-grid .card-acronym {
+    margin: 0;
+    font-weight: 700;  /* usa la variante bold si existe */
+    font-size: 40px;
+    line-height: 1.1;
+    color: currentColor; /* hereda color de la card */
 }
 
-/* Micro-acento superior para dar “marca” */
-.logo-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: transparent;
-    transition: background-color .18s ease;
+.cards-grid .card-name {
+    margin: 8px 0 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.35;
+    color: currentColor;
+    opacity: .95;
 }
 
-.logo-card:hover::before {
-    background: #198754;
+/* Hover suave (sin desplazamiento) */
+.cards-grid .card:hover {
+    background: rgba(15, 23, 42, 0.02);
+    box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
 }
 
-/* ---------- Responsive ---------- */
+/* =========================================================
+   Colores por card (texto hereda)
+   ========================================================= */
+.card--ife  { color: #3f78e0; }
+.card--cof  { color: #ea4343; }
+.card--rf   { color: #bd3fe0; }
+.card--vida { color: #f98d79; }
+.card--afe  { color: #32435f; }
+
+/* =========================================================
+   Responsive (mantén tu lógica si quieres)
+   ========================================================= */
 @media (max-width: 1200px) {
-    .logo-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    .cards-grid { grid-template-columns: repeat(3, 1fr); }
 
-    .logo-card {
+    .cards-grid .card {
         border-right: 1px solid rgba(15, 23, 42, 0.10);
         border-bottom: 1px solid rgba(15, 23, 42, 0.10);
     }
 
-    /* limpia bordes del final de fila */
-    .logo-card:nth-child(3n) { border-right: 0; }
-    .logo-card:nth-last-child(-n+2) { border-bottom: 0; }
+    .cards-grid .card:nth-child(3n) { border-right: 0; }
+    .cards-grid .card:nth-last-child(-n+2) { border-bottom: 0; }
 }
 
 @media (max-width: 768px) {
-    .logo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .logo-card:nth-child(2n) { border-right: 0; }
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    .cards-grid .card:nth-child(2n) { border-right: 0; }
 }
 
 @media (max-width: 480px) {
-    .logo-grid {
-        grid-template-columns: 1fr;
-    }
+    .cards-grid { grid-template-columns: 1fr; }
 
-    .logo-card {
+    .cards-grid .card {
         border-right: 0;
         border-bottom: 1px solid rgba(15, 23, 42, 0.10);
     }
 
-    .logo-card:last-child {
-        border-bottom: 0;
-    }
+    .cards-grid .card:last-child { border-bottom: 0; }
 }
+
 
 
 

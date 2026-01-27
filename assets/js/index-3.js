@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ctaTimer = setTimeout(() => {
                 btn.classList.remove("hero-cta-hidden");
                 btn.classList.add("hero-cta-shown");
-            }, 1000);
+            }, 7000);
         };
 
         // Reproduce solo el vídeo del slide activo y avanza al terminar

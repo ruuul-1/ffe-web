@@ -1,7 +1,5 @@
 FFE:
-- Doble navbar como el de la diocesisoa.org
-- Degradado en el navbar para que se pueda ver
-- Quitar flecha a los slider y poner indicativo de que hay que bajar para ver más info
-- Vídeos IA para las diferentes instituciones que tienen
-- Hero que ocupe toda la pantalla
-- Cards abajo y cambiar diseño
+- Degradado en el navbar
+- Vídeos hero
+- Botón hero centrado
+- Tarjetas de las instituciones con el logo y letras abajo
