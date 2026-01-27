@@ -1,12 +1,20 @@
 /**
- * HERO VIDEO SWIPER
- * - Sincroniza CTA (texto/enlace) con el slide activo
+ * HERO VIDEO
+ * - Sincroniza CTA (botón/enlace) con el slide activo
  * - Reproduce solo el vídeo del slide visible y avanza al terminar
  * - Repite desde el primer slide al finalizar el último
- * - Muestra el CTA con retardo (7s) en cada slide
+ * - Muestra el CTA con retardo en cada slide
+ *
+ * NOTICIAS / EVENTOS (scroll en carruseles):
+ * - Convierte la rueda/trackpad (wheel) en "slideNext/Prev"
+ * - Solo en los Swipers que tengan la clase: .scroll-js
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+    /* =========================================================
+       1) HERO: CTA + vídeos
+       ========================================================= */
+
     // CTA
     const btn = document.getElementById("hero-btn");
     const ctaWrap = document.getElementById("hero-cta-wrap");
@@ -35,30 +43,33 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.href = link;
         };
 
-        // Oculta el CTA y lo muestra tras 7s, reiniciando la animación
+        // Oculta el CTA y lo muestra tras retardo, reiniciando la animación
         const scheduleCTA = () => {
             if (!btn || !ctaWrap) return;
 
             if (ctaTimer) clearTimeout(ctaTimer);
 
+            // Oculta
             btn.classList.remove("hero-cta-shown");
             btn.classList.add("hero-cta-hidden");
 
+            // Reinicia animación
             ctaWrap.classList.remove("animate__slideInUp");
             void ctaWrap.offsetWidth; // reflow para reiniciar la animación
             ctaWrap.classList.add("animate__slideInUp");
 
+            // Muestra el botón tras 7 segundos
             ctaTimer = setTimeout(() => {
                 btn.classList.remove("hero-cta-hidden");
                 btn.classList.add("hero-cta-shown");
-            }, 7000);
+            }, 1000);
         };
 
         // Reproduce solo el vídeo del slide activo y avanza al terminar
         const playActiveVideo = () => {
             document
                 .querySelectorAll(".swiper-container.swiper-fullscreen .bg-video")
-                .forEach(v => {
+                .forEach((v) => {
                     v.pause();
                     v.currentTime = 0;
                     v.onended = null;
@@ -87,7 +98,42 @@ document.addEventListener("DOMContentLoaded", () => {
             playActiveVideo();
         };
 
+        // Init
         onSlideChanged();
         sw.on("slideChange", onSlideChanged);
     }, 50);
+
+    /* =========================================================
+       2) WHEEL -> SWIPE (solo para carruseles con clase .scroll-js)
+       ========================================================= */
+
+    const wheelSwipers = document.querySelectorAll(".swiper-container.scroll-js .swiper");
+
+    wheelSwipers.forEach((swiperEl) => {
+        // El "container" es el wrapper que recibe el wheel y evita scroll de página
+        const container = swiperEl.closest(".swiper-container");
+        if (!container) return;
+
+        container.addEventListener(
+            "wheel",
+            (e) => {
+                const sw = swiperEl.swiper;
+                if (!sw) return;
+
+                // Elige el delta dominante (trackpad horizontal vs rueda vertical)
+                const delta =
+                    Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
+
+                // Umbral para evitar movimientos mínimos/ruido
+                if (Math.abs(delta) < 10) return;
+
+                // Evita que la página haga scroll mientras estás sobre el carrusel
+                e.preventDefault();
+
+                if (delta > 0) sw.slideNext();
+                else sw.slidePrev();
+            },
+            { passive: false }
+        );
+    });
 });

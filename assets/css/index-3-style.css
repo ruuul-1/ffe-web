@@ -14,15 +14,38 @@
     padding: 0.45rem 0 !important;
 }
 
+/* Navbar en columna (topbar + navbar) */
 .navbar.center-nav {
     display: flex;
     flex-direction: column;
 }
 
+/* Oculta la topbar (navbar-info) en el navbar clonado al hacer scroll */
 .navbar-clone .navbar-info {
     display: none !important;
 }
 
+/* Degradado navbar */
+.navbar.center-nav:not(.navbar-clone) {
+    position: relative;
+    background: transparent !important;
+}
+
+.navbar.center-nav:not(.navbar-clone)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    height: 140%;
+    pointer-events: none;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.55) 35%,
+            rgba(0, 0, 0, 0.09) 70%,
+            rgba(0, 0, 0, 0) 100%
+    );
+    z-index: -1;
+}
 
 /* =========================================================
    HERO VIDEO
@@ -33,8 +56,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-
 
 /* Botón oculto */
 .hero-cta-hidden {
@@ -50,9 +71,19 @@
     pointer-events: auto;
 }
 
+
+.swiper-fullscreen .swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+
 /* =========================================================
    CARDS SUBMENÚ
    ========================================================= */
+
 /* Fuente local: Barmeno */
 @font-face {
     font-family: "Barmeno";
@@ -87,23 +118,23 @@
     background: #fff;
     border: 1px solid rgba(15, 23, 42, 0.10);
     border-radius: 16px;
-    overflow: hidden; /* clave para recortar bien el radio */
+    overflow: hidden;
     box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
 }
 
 /* Cada card */
 .cards-grid .card {
     display: flex;
-    flex-direction: column;       /* logo arriba, texto abajo */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 14px;
 
     padding: 28px 22px;
-    min-height: 230px;            /* un pelín más para texto */
+    min-height: 230px;
     background: #fff;
 
-    /* separador entre cards (solo interno) */
+    /* separador entre cards */
     border: 0;
     border-radius: 0;
     border-right: 1px solid rgba(15, 23, 42, 0.10);
@@ -111,8 +142,8 @@
     text-decoration: none;
     position: relative;
 
-    /* Hover limpio (sin mover) */
-    transition: background-color .18s ease, box-shadow .18s ease;
+    /* Hover limpio */
+    transition: background-color .18s ease, box-shadow .18s ease, filter .18s ease, opacity .18s ease;
 }
 
 /* Última sin separador */
@@ -123,7 +154,7 @@
 /* Logo */
 .cards-grid .card img {
     max-width: 100%;
-    max-height: 95px;
+    max-height: 150px;
     object-fit: contain;
 }
 
@@ -135,10 +166,10 @@
 
 .cards-grid .card-acronym {
     margin: 0;
-    font-weight: 700;  /* usa la variante bold si existe */
+    font-weight: 700;
     font-size: 40px;
     line-height: 1.1;
-    color: currentColor; /* hereda color de la card */
+    color: currentColor;
 }
 
 .cards-grid .card-name {
@@ -150,8 +181,17 @@
     opacity: .95;
 }
 
-/* Hover suave (sin desplazamiento) */
+/* Estado normal: todo “apagado” (logo + texto) sin tocar colores */
+.cards-grid .card {
+    filter: grayscale(100%);
+    opacity: .70;
+}
+
+/* Hover: recupera color (logo + texto) */
 .cards-grid .card:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+
     background: rgba(15, 23, 42, 0.02);
     box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
 }
@@ -195,8 +235,6 @@
 
     .cards-grid .card:last-child { border-bottom: 0; }
 }
-
-
 
 
 /* =========================================================
@@ -250,6 +288,7 @@
 .swiper {
     overflow: visible;
 }
+
 
 /* =========================================================
    FOOTER / RRSS
@@ -365,26 +404,4 @@
 
 .progress-wrap::after {
     color: #198754 !important;
-}
-
-
-.navbar.center-nav:not(.navbar-clone) {
-    position: relative;
-    background: transparent !important;
-}
-
-.navbar.center-nav:not(.navbar-clone)::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    height: 140%;
-    pointer-events: none;
-    background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0.85) 0%,
-            rgba(0, 0, 0, 0.55) 35%,
-            rgba(0, 0, 0, 0.09) 70%,
-            rgba(0, 0, 0, 0) 100%
-    );
-    z-index: -1;
 }
